@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070913" />
+    <title>FUNABASHI // AFTER DARK</title>
+    <meta
+      name="description"
+      content="夜に歩くと映える船橋市の街を巡る、ネオンナイトガイド。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+      <div class="gate-grid" aria-hidden="true"></div>
+      <div class="gate-card">
+        <div class="gate-brand">
+          <span class="gate-mark">K</span>
+          <span>MEMBER ACCESS</span>
+        </div>
+        <p class="gate-kicker">RESTRICTED AREA // 35.6946° N</p>
+        <h1 id="gate-title">メンバー認証</h1>
+        <p class="gate-copy">夜の船橋へ接続するには、会員コードを入力してください。</p>
+        <form id="gate-form" novalidate>
+          <label for="member-code">MEMBER ID</label>
+          <div class="code-field">
+            <input
+              id="member-code"
+              name="member-code"
+              type="password"
+              autocomplete="off"
+              placeholder="会員コードを入力"
+              aria-describedby="gate-error"
+            />
+            <button type="submit" aria-label="認証する">→</button>
+          </div>
+          <p class="gate-error" id="gate-error" role="alert"></p>
+        </form>
+        <p class="gate-footer"><span></span> SECURE CHANNEL / CHIBA-14</p>
+      </div>
+    </div>
+
+    <div class="site" id="site" aria-hidden="true">
+      <header class="nav-wrap">
+        <nav class="nav" aria-label="メインナビゲーション">
+          <a class="brand" href="#top" aria-label="トップへ">
+            <span class="brand-orbit"></span>
+            <span>FNB<span>.NIGHT</span></span>
+          </a>
+          <div class="nav-links">
+            <a class="active" href="#top">TOP</a>
+            <a href="#spots">SPOTS</a>
+            <a href="#route">ROUTE</a>
+          </div>
+          <div class="nav-status"><i></i> MEMBER <b>KGKKSG810</b></div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="top">
+          <div class="hero-noise"></div>
+          <div class="hero-sky" aria-hidden="true">
+            <span class="orb orb-one"></span>
+            <span class="orb orb-two"></span>
+            <span class="light-beam"></span>
+          </div>
+          <div class="hero-content">
+            <p class="eyebrow"><span>01</span> CHIBA / AFTER DARK</p>
+            <h1>
+              <span>夜の船橋</span>
+              <strong>おすすめスポット3選</strong>
+            </h1>
+            <p class="hero-lead">
+              人の熱が灯を生む街。<br />
+              ネオンに沈む商店街と、<br class="desktop-break" /> 未来へ続く路地を歩く。
+            </p>
+            <a class="explore-button" href="#spots">
+              <span>EXPLORE THE NIGHT</span>
+              <b>↘</b>
+            </a>
+          </div>
+          <div class="hero-meta">
+            <div>
+              <small>LOCATION</small>
+              <strong>FUNABASHI, CHIBA</strong>
+            </div>
+            <div>
+              <small>LOCAL TIME</small>
+              <strong id="clock">20:14 JST</strong>
+            </div>
+          </div>
+          <div class="hero-index" aria-hidden="true">35°41'40"N<br />139°58'58"E</div>
+        </section>
+
+        <section class="intro" id="spots">
+          <div class="section-heading">
+            <p class="eyebrow"><span>02</span> NIGHT SPOTS</p>
+            <h2>光を追って、<br />街の別の顔へ。</h2>
+          </div>
+
+          <div class="spot-grid">
+            <article class="spot-card spot-large">
+              <div class="spot-image station-image">
+                <span class="spot-number">01</span>
+                <span class="card-tag">HUB</span>
+              </div>
+              <div class="spot-body">
+                <p>JR FUNABASHI STATION</p>
+                <h3>南口の夜は、<br />光でできている。</h3>
+                <span>約 18:30 — 23:00</span>
+              </div>
+            </article>
+
+            <article class="spot-card">
+              <div class="spot-image arcade-image">
+                <span class="spot-number">02</span>
+                <span class="card-tag">RETRO</span>
+              </div>
+              <div class="spot-body">
+                <p>DAIMON STREET</p>
+                <h3>朝は賑やかに、<br />夜は輝く。</h3>
+                <span>約 19:00 — 24:00</span>
+              </div>
+            </article>
+
+            <article class="spot-card">
+              <div class="spot-image canal-image">
+                <span class="spot-number">03</span>
+                <span class="card-tag">QUIET</span>
+              </div>
+              <div class="spot-body">
+                <p>FUTSUKAICHI WALK</p>
+                <h3>え？また戻るの？</h3>
+                <span>約 21:00 — 23:30</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="route" id="route">
+          <div class="route-copy">
+            <p class="eyebrow"><span>03</span> RECOMMENDED ROUTE</p>
+            <h2>ひと晩で巡る、<br />船橋の夜景。</h2>
+            <p>駅の賑わいから、静かな裏路地まで。移動しやすい約2kmのコースです。</p>
+            <p class="route-update">おすすめスポットは見つかり次第サイトを更新中！！</p>
+          </div>
+          <ol class="route-list">
+            <li>
+              <span>18:30</span>
+              <div><small>01 / START</small><strong>JR船橋駅</strong></div>
+            </li>
+            <li>
+              <span>19:20</span>
+              <div><small>02 / DINNER</small><strong>ららぽーと・東京ベイ</strong></div>
+            </li>
+            <li>
+              <span>21:00</span>
+              <div>
+                <small>03 / WALK</small>
+                <strong>仲通り商店街</strong>
+                <p>（2回分の無駄な電車賃を備えるか、すべて徒歩のどちらかをお選びください）</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <footer>
+        <a class="brand" href="#top"><span class="brand-orbit"></span><span>FNB<span>.NIGHT</span></span></a>
+        <p>© 2026 FUNABASHI AFTER DARK</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
